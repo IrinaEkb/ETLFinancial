@@ -1,0 +1,14 @@
+venv/
+.venv/
+
+**/__pycache__/
+*.pyc
+.pytest_cache/
+allure-results/
+
+data/raw/
+data/processed/
+!data/analytics/
+
+.DS_Store
+.env

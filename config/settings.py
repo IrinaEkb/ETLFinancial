@@ -1,0 +1,5 @@
+RAW_PATH = "data/raw"
+PROCESSED_PATH = "data/processed"
+
+COMPANY_CIK = "0000049071"
+COMPANY_NAME = "HUMANA"
