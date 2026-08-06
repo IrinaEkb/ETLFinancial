@@ -15,6 +15,7 @@
 import json
 import time
 from pathlib import Path
+from datetime import datetime
 
 import pandas as pd
 import requests
@@ -25,6 +26,7 @@ from config.settings import (
     PROCESSED_PATH,
 )
 
+today = datetime.today().strftime("%Y_%m_%d")
 
 def build_headers():
     return {
@@ -125,6 +127,12 @@ def fetch_company_facts(url, timeout=30, max_attempts=3, output_path=None):
         try:
             data = response.json()
 
+            gaap = data["facts"]["us-gaap"]
+
+            print(
+                f"Extracted XBRL tags: {len(gaap)}"
+        )
+
         except ValueError as e:
             raise RuntimeError(
                 "Expected JSON response from SEC API"
@@ -135,9 +143,9 @@ def fetch_company_facts(url, timeout=30, max_attempts=3, output_path=None):
         if output_path is None:
 
             output_path = (
-                Path(RAW_PATH)
-                / "humana.json"
-            )
+            Path(RAW_PATH)
+            / f"humana_{today}.json"
+)
 
         else:
 
@@ -156,7 +164,7 @@ def fetch_company_facts(url, timeout=30, max_attempts=3, output_path=None):
 
         create_all_facts_csv(data)
 
-        return data
+        return output_path
 
     raise RuntimeError(
         "Unable to retrieve SEC data."
@@ -170,8 +178,9 @@ def run_extract():
         f"companyfacts/CIK{COMPANY_CIK}.json"
     )
 
-    fetch_company_facts(url)
+
+    raw_file = fetch_company_facts(url)
+
+    return raw_file
 
 
-if __name__ == "__main__":
-    run_extract()

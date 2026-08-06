@@ -8,6 +8,8 @@
 
 FINANCIAL_RULES = {
 
+# INCOME LOSS STATEMENT
+
     "income_statement": {
 
         "premium_revenue": [
@@ -154,7 +156,6 @@ FINANCIAL_RULES = {
         "insurance_related_expenses": [
 
             "DeferredPolicyAcquisitionCostAmortizationExpense",
-            "ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpenseNet",
             "SupplementalInformationForPropertyCasualtyInsuranceUnderwritersCurrentYearClaimsAndClaimsAdjustmentExpense",
             "SupplementalInformationForPropertyCasualtyInsuranceUnderwritersPriorYearClaimsAndClaimsAdjustmentExpense"
 
@@ -233,6 +234,10 @@ FINANCIAL_RULES = {
 
     },
 
+
+
+# BALANCE SHEET 
+
         "balance_sheet": {
 
         "cash_and_cash_equivalents": [
@@ -307,7 +312,7 @@ FINANCIAL_RULES = {
 
             "LiabilityForUnpaidClaimsAndClaimsAdjustmentExpense",
             "LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseNet",
-            "LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseIncurredClaims",
+            # "LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseIncurredClaims",
             "ShortdurationInsuranceContractsLiabilityForUnpaidClaimsAndAllocatedClaimAdjustmentExpenseNet",
             "LiabilityForClaimsAndClaimsAdjustmentExpense"
 
@@ -522,6 +527,10 @@ FINANCIAL_RULES = {
         ]
 
     },
+
+
+
+# CASH FLOW STATEMENT
 
     "cash_flow": {
 
