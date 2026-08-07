@@ -8,7 +8,7 @@
 
 FINANCIAL_RULES = {
 
-# INCOME LOSS STATEMENT
+# PROFIT LOSS STATEMENT
 
     "income_statement": {
 
@@ -312,7 +312,6 @@ FINANCIAL_RULES = {
 
             "LiabilityForUnpaidClaimsAndClaimsAdjustmentExpense",
             "LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseNet",
-            # "LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseIncurredClaims",
             "ShortdurationInsuranceContractsLiabilityForUnpaidClaimsAndAllocatedClaimAdjustmentExpenseNet",
             "LiabilityForClaimsAndClaimsAdjustmentExpense"
 

@@ -12,3 +12,8 @@ data/processed/
 
 .DS_Store
 .env
+
+airflow/airflow.db
+airflow/logs/
+__pycache__/
+.env

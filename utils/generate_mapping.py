@@ -213,6 +213,7 @@ def check_mapping_duplicates(tag_classification):
 
 
 
+
 def generate_mapping(raw_file=None):
 
 
@@ -537,6 +538,12 @@ def generate_mapping(raw_file=None):
 
 
 
+
+
+
+
+
+
 def get_latest_raw_file():
 
     files = list(
@@ -557,6 +564,48 @@ def get_latest_raw_file():
         files,
         key=lambda file: file.stat().st_mtime
     )
+
+def check_rule_duplicates(financial_rules):
+
+    tag_locations = {}
+
+    for statement, metrics in financial_rules.items():
+
+        for metric, rules in metrics.items():
+
+            for tag in rules:
+
+                if tag not in tag_locations:
+                    tag_locations[tag] = []
+
+                tag_locations[tag].append(
+                    f"{statement}.{metric}"
+                )
+
+
+    duplicates = {
+        tag: locations
+        for tag, locations in tag_locations.items()
+        if len(locations) > 1
+    }
+
+
+    print("\n========== RULE DUPLICATES ==========")
+    print(
+        f"Tags defined in multiple rules: {len(duplicates)}"
+    )
+
+
+    for tag, locations in duplicates.items():
+
+        print("\n", tag)
+
+        for location in locations:
+            print("  ->", location)
+
+    return duplicates
+
+check_rule_duplicates(FINANCIAL_RULES)
 
 
 

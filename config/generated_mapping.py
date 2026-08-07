@@ -1063,7 +1063,7 @@ FINANCIAL_MAPPING = {'balance_sheet': {'accounts_receivable': [{'matched_rule': 
                                                  'metric': 'insurance_claim_reserves',
                                                  'statement': 'balance_sheet',
                                                  'tag': 'LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseClaimsPaidPriorYears1'},
-                                                {'matched_rule': 'LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseIncurredClaims',
+                                                {'matched_rule': 'LiabilityForUnpaidClaimsAndClaimsAdjustmentExpense',
                                                  'metric': 'insurance_claim_reserves',
                                                  'statement': 'balance_sheet',
                                                  'tag': 'LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseIncurredClaims'},
