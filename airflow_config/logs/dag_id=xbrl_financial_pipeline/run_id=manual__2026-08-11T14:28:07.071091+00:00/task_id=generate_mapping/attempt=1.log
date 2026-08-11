@@ -1,0 +1,405 @@
+{"timestamp":"2026-08-11T14:28:13.041922Z","level":"info","event":"2026-08-11T14:28:13.041706Z [info     ] ::group::Pre Execute           [task] loc=task_runner.py:2303","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:13.256385Z","level":"info","event":"DAG bundles loaded: dags-folder","task_id":"generate_mapping","ti_id":"019ff139-3931-7788-8969-bb75cb5750b3","dag_id":"xbrl_financial_pipeline","run_id":"manual__2026-08-11T14:28:07.071091+00:00","map_index":-1,"try_number":1,"logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":271}
+{"timestamp":"2026-08-11T14:28:13.256822Z","level":"info","event":"Filling up the DagBag from /Users/irinafendley/Projects/ETLFinancial/airflow_config/dags/auto_pipeline.py","task_id":"generate_mapping","ti_id":"019ff139-3931-7788-8969-bb75cb5750b3","dag_id":"xbrl_financial_pipeline","run_id":"manual__2026-08-11T14:28:07.071091+00:00","map_index":-1,"try_number":1,"logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":460}
+{"timestamp":"2026-08-11T14:28:13.281035Z","level":"info","event":"Worker startup parse complete","bundle_name":"dags-folder","bundle_version":null,"dag_file":"auto_pipeline.py","dag_id":"xbrl_financial_pipeline","bundle_prepare_ms":0,"dag_file_parse_ms":24,"task_id":"generate_mapping","ti_id":"019ff139-3931-7788-8969-bb75cb5750b3","run_id":"manual__2026-08-11T14:28:07.071091+00:00","map_index":-1,"try_number":1,"logger":"task","filename":"task_runner.py","lineno":1062}
+{"timestamp":"2026-08-11T14:28:13.328802Z","level":"info","event":"::endgroup::","task_id":"generate_mapping","ti_id":"019ff139-3931-7788-8969-bb75cb5750b3","dag_id":"xbrl_financial_pipeline","run_id":"manual__2026-08-11T14:28:07.071091+00:00","map_index":-1,"try_number":1,"logger":"task","filename":"task_runner.py","lineno":2107}
+{"timestamp":"2026-08-11T14:28:13.331562Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:13.331651Z","level":"info","event":"========== RULE DUPLICATES ==========","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:13.331697Z","level":"info","event":"Tags defined in multiple rules: 0","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:13.331737Z","level":"info","event":"Generating mapping from: data/raw/humana_2026_08_11.json","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328278Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328427Z","level":"info","event":"========== MAPPING DUPLICATES ==========","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328470Z","level":"info","event":"Tags mapped to multiple metrics: 88","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328507Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328541Z","level":"info","event":" LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseIncurredClaims","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328576Z","level":"info","event":"  -> income_statement.medical_benefits_and_claims_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328611Z","level":"info","event":"  -> balance_sheet.insurance_claim_reserves","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328643Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328675Z","level":"info","event":" LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseIncurredClaims1","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328707Z","level":"info","event":"  -> income_statement.medical_benefits_and_claims_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328738Z","level":"info","event":"  -> balance_sheet.insurance_claim_reserves","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328769Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328800Z","level":"info","event":" LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseIncurredClaimsCurrentYear","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328832Z","level":"info","event":"  -> income_statement.medical_benefits_and_claims_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328872Z","level":"info","event":"  -> balance_sheet.insurance_claim_reserves","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328902Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328932Z","level":"info","event":" LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseIncurredClaimsPriorYears","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328962Z","level":"info","event":"  -> income_statement.medical_benefits_and_claims_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.328991Z","level":"info","event":"  -> balance_sheet.insurance_claim_reserves","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329021Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329050Z","level":"info","event":" LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseIncurredButNotReportedIBNRClaimsAmount","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329081Z","level":"info","event":"  -> income_statement.medical_benefits_and_claims_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329111Z","level":"info","event":"  -> balance_sheet.insurance_claim_reserves","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329151Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329181Z","level":"info","event":" IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329211Z","level":"info","event":"  -> income_statement.investment_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329241Z","level":"info","event":"  -> balance_sheet.investment_securities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329270Z","level":"info","event":"  -> balance_sheet.investments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329299Z","level":"info","event":"  -> balance_sheet.equity","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329328Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329358Z","level":"info","event":" IncomeLossFromEquityMethodInvestments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329387Z","level":"info","event":"  -> income_statement.investment_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329417Z","level":"info","event":"  -> balance_sheet.investment_securities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329447Z","level":"info","event":"  -> balance_sheet.investments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329476Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329506Z","level":"info","event":" AmortizationOfIntangibleAssets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329535Z","level":"info","event":"  -> income_statement.depreciation_and_amortization","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329565Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329594Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329623Z","level":"info","event":" FiniteLivedIntangibleAssetsAmortizationExpenseNextTwelveMonths","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329653Z","level":"info","event":"  -> income_statement.depreciation_and_amortization","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329682Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329711Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329740Z","level":"info","event":" FiniteLivedIntangibleAssetsAmortizationExpenseRemainderOfFiscalYear","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329769Z","level":"info","event":"  -> income_statement.depreciation_and_amortization","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329803Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329832Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329861Z","level":"info","event":" FiniteLivedIntangibleAssetsAmortizationExpenseYearFive","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329953Z","level":"info","event":"  -> income_statement.depreciation_and_amortization","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.329990Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330022Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330053Z","level":"info","event":" FiniteLivedIntangibleAssetsAmortizationExpenseYearFour","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330084Z","level":"info","event":"  -> income_statement.depreciation_and_amortization","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330115Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330145Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330176Z","level":"info","event":" FiniteLivedIntangibleAssetsAmortizationExpenseYearThree","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330208Z","level":"info","event":"  -> income_statement.depreciation_and_amortization","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330239Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330271Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330303Z","level":"info","event":" FiniteLivedIntangibleAssetsAmortizationExpenseYearTwo","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330334Z","level":"info","event":"  -> income_statement.depreciation_and_amortization","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330364Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330394Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330425Z","level":"info","event":" NetIncomeLossAttributableToNoncontrollingInterest","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330455Z","level":"info","event":"  -> income_statement.net_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330486Z","level":"info","event":"  -> balance_sheet.equity","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330517Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330547Z","level":"info","event":" OtherComprehensiveIncomeLossNetOfTax","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330578Z","level":"info","event":"  -> income_statement.net_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330608Z","level":"info","event":"  -> income_statement.other_income_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330639Z","level":"info","event":"  -> income_statement.comprehensive_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330671Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330702Z","level":"info","event":" OtherComprehensiveIncomeLossNetOfTaxPortionAttributableToParent","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330732Z","level":"info","event":"  -> income_statement.net_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330763Z","level":"info","event":"  -> income_statement.other_income_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330794Z","level":"info","event":"  -> income_statement.comprehensive_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330825Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330857Z","level":"info","event":" OtherComprehensiveIncomeLossReclassificationAdjustmentForSaleOfSecuritiesIncludedInNetIncomeBeforeTax","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330897Z","level":"info","event":"  -> income_statement.net_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330928Z","level":"info","event":"  -> income_statement.other_income_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330959Z","level":"info","event":"  -> income_statement.comprehensive_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.330989Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331020Z","level":"info","event":" OtherComprehensiveIncomeLossReclassificationAdjustmentForSaleOfSecuritiesIncludedInNetIncomeNetOfTax","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331051Z","level":"info","event":"  -> income_statement.net_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331081Z","level":"info","event":"  -> income_statement.other_income_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331111Z","level":"info","event":"  -> income_statement.comprehensive_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331142Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331172Z","level":"info","event":" OtherComprehensiveIncomeLossReclassificationAdjustmentForSaleOfSecuritiesIncludedInNetIncomeTax","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331203Z","level":"info","event":"  -> income_statement.net_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331233Z","level":"info","event":"  -> income_statement.other_income_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331265Z","level":"info","event":"  -> income_statement.comprehensive_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331295Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331326Z","level":"info","event":" OtherComprehensiveIncomeLossReclassificationAdjustmentFromAOCIForSaleOfSecuritiesNetOfTax","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331356Z","level":"info","event":"  -> income_statement.net_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331387Z","level":"info","event":"  -> income_statement.other_income_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331418Z","level":"info","event":"  -> income_statement.comprehensive_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331448Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331478Z","level":"info","event":" OtherComprehensiveIncomeUnrealizedHoldingGainLossOnSecuritiesArisingDuringPeriodNetOfTax","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331509Z","level":"info","event":"  -> income_statement.net_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331540Z","level":"info","event":"  -> income_statement.other_income_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331570Z","level":"info","event":"  -> income_statement.comprehensive_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331601Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331632Z","level":"info","event":" IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331662Z","level":"info","event":"  -> income_statement.income_before_tax","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331692Z","level":"info","event":"  -> balance_sheet.equity","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331723Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331754Z","level":"info","event":" DeferredTaxLiabilitiesOtherComprehensiveIncome","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331784Z","level":"info","event":"  -> income_statement.other_income_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331824Z","level":"info","event":"  -> balance_sheet.deferred_tax_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331855Z","level":"info","event":"  -> balance_sheet.total_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331886Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331916Z","level":"info","event":" GainLossOnSaleOfInvestments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331947Z","level":"info","event":"  -> income_statement.other_income_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.331977Z","level":"info","event":"  -> balance_sheet.investments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332008Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332038Z","level":"info","event":" OtherComprehensiveIncomeReclassificationAdjustmentForSaleOfSecuritiesIncludedInNetIncomeBeforeTax","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332069Z","level":"info","event":"  -> income_statement.other_income_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332100Z","level":"info","event":"  -> income_statement.comprehensive_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332130Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332160Z","level":"info","event":" OtherComprehensiveIncomeReclassificationAdjustmentForSaleOfSecuritiesIncludedInNetIncomeNetOfTax","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332191Z","level":"info","event":"  -> income_statement.other_income_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332221Z","level":"info","event":"  -> income_statement.comprehensive_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332252Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332282Z","level":"info","event":" OtherComprehensiveIncomeReclassificationAdjustmentForSaleOfSecuritiesIncludedInNetIncomeTax","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332312Z","level":"info","event":"  -> income_statement.other_income_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332342Z","level":"info","event":"  -> income_statement.comprehensive_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332372Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332402Z","level":"info","event":" OtherComprehensiveIncomeAvailableforsaleSecuritiesAdjustmentNetOfTaxPortionAttributableToParent","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332432Z","level":"info","event":"  -> income_statement.other_income_expense","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332463Z","level":"info","event":"  -> income_statement.comprehensive_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332493Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332524Z","level":"info","event":" AvailableForSaleDebtSecuritiesAccumulatedGrossUnrealizedGainBeforeTax","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332555Z","level":"info","event":"  -> income_statement.investment_gains_losses","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332585Z","level":"info","event":"  -> balance_sheet.investment_securities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332615Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332645Z","level":"info","event":" ComprehensiveIncomeNetOfTaxAttributableToNoncontrollingInterest","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332676Z","level":"info","event":"  -> income_statement.comprehensive_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332706Z","level":"info","event":"  -> balance_sheet.equity","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332739Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332774Z","level":"info","event":" ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332806Z","level":"info","event":"  -> income_statement.comprehensive_income","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332836Z","level":"info","event":"  -> balance_sheet.equity","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332866Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332896Z","level":"info","event":" CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332928Z","level":"info","event":"  -> balance_sheet.cash_and_cash_equivalents","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332959Z","level":"info","event":"  -> cash_flow.cash_change","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.332988Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333018Z","level":"info","event":" CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333048Z","level":"info","event":"  -> balance_sheet.cash_and_cash_equivalents","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333078Z","level":"info","event":"  -> cash_flow.cash_change","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333108Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333138Z","level":"info","event":" ProceedsFromRepaymentsOfBankOverdrafts","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333201Z","level":"info","event":"  -> balance_sheet.cash_and_cash_equivalents","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333237Z","level":"info","event":"  -> cash_flow.other_financing_activity","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333267Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333298Z","level":"info","event":" AvailableForSaleSecuritiesDebtSecuritiesCurrent","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333329Z","level":"info","event":"  -> balance_sheet.investment_securities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333359Z","level":"info","event":"  -> balance_sheet.debt","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333389Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333421Z","level":"info","event":" EquityMethodInvestments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333451Z","level":"info","event":"  -> balance_sheet.investment_securities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333482Z","level":"info","event":"  -> balance_sheet.investments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333512Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333542Z","level":"info","event":" PaymentsToAcquireAvailableForSaleSecurities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333572Z","level":"info","event":"  -> balance_sheet.investment_securities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333602Z","level":"info","event":"  -> cash_flow.investment_purchases","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333632Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333663Z","level":"info","event":" PaymentsToAcquireAvailableForSaleSecuritiesDebt","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333693Z","level":"info","event":"  -> balance_sheet.investment_securities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333723Z","level":"info","event":"  -> cash_flow.investment_purchases","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333753Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333783Z","level":"info","event":" PaymentsToAcquireEquityMethodInvestments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333821Z","level":"info","event":"  -> balance_sheet.investment_securities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333852Z","level":"info","event":"  -> balance_sheet.investments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333882Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333912Z","level":"info","event":" ProceedsFromSaleOfAvailableForSaleSecurities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333942Z","level":"info","event":"  -> balance_sheet.investment_securities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.333973Z","level":"info","event":"  -> cash_flow.investment_sales","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334003Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334033Z","level":"info","event":" ProceedsFromSaleOfAvailableForSaleSecuritiesDebt","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334063Z","level":"info","event":"  -> balance_sheet.investment_securities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334093Z","level":"info","event":"  -> cash_flow.investment_sales","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334124Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334154Z","level":"info","event":" AssetsCurrent","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334184Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334214Z","level":"info","event":"  -> balance_sheet.current_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334244Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334274Z","level":"info","event":" AssetsOfDisposalGroupIncludingDiscontinuedOperationCurrent","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334304Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334335Z","level":"info","event":"  -> balance_sheet.current_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334365Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334395Z","level":"info","event":" DeferredTaxAssetsCapitalLossCarryforwards","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334425Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334456Z","level":"info","event":"  -> balance_sheet.deferred_tax_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334486Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334516Z","level":"info","event":" DeferredTaxAssetsGross","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334547Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334577Z","level":"info","event":"  -> balance_sheet.deferred_tax_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334607Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334637Z","level":"info","event":" DeferredTaxAssetsInvestments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334668Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334699Z","level":"info","event":"  -> balance_sheet.deferred_tax_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334729Z","level":"info","event":"  -> balance_sheet.investments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334759Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334790Z","level":"info","event":" DeferredTaxAssetsLiabilitiesNet","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334821Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334858Z","level":"info","event":"  -> balance_sheet.deferred_tax_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334889Z","level":"info","event":"  -> balance_sheet.deferred_tax_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334920Z","level":"info","event":"  -> balance_sheet.total_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334950Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.334980Z","level":"info","event":" DeferredTaxAssetsLiabilitiesNetCurrent","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335010Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335040Z","level":"info","event":"  -> balance_sheet.current_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335070Z","level":"info","event":"  -> balance_sheet.deferred_tax_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335100Z","level":"info","event":"  -> balance_sheet.deferred_tax_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335130Z","level":"info","event":"  -> balance_sheet.total_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335160Z","level":"info","event":"  -> balance_sheet.current_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335190Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335220Z","level":"info","event":" DeferredTaxAssetsLiabilitiesNetNoncurrent","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335250Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335280Z","level":"info","event":"  -> balance_sheet.deferred_tax_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335310Z","level":"info","event":"  -> balance_sheet.deferred_tax_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335341Z","level":"info","event":"  -> balance_sheet.total_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335371Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335401Z","level":"info","event":" DeferredTaxAssetsNet","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335432Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335463Z","level":"info","event":"  -> balance_sheet.deferred_tax_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335494Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335524Z","level":"info","event":" DeferredTaxAssetsOperatingLossCarryforwards","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335555Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335585Z","level":"info","event":"  -> balance_sheet.deferred_tax_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335615Z","level":"info","event":"  -> balance_sheet.tax_assets_and_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335645Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335676Z","level":"info","event":" DeferredTaxAssetsOther","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335706Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335736Z","level":"info","event":"  -> balance_sheet.deferred_tax_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335767Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335797Z","level":"info","event":" DeferredTaxAssetsTaxDeferredExpenseCompensationAndBenefitsEmployeeBenefits","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335828Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335867Z","level":"info","event":"  -> balance_sheet.deferred_tax_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335897Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335927Z","level":"info","event":" DeferredTaxAssetsTaxDeferredExpenseReservesAndAccrualsAccruedLiabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335958Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.335988Z","level":"info","event":"  -> balance_sheet.deferred_tax_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336019Z","level":"info","event":"  -> balance_sheet.deferred_tax_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336049Z","level":"info","event":"  -> balance_sheet.total_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336079Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336109Z","level":"info","event":" DeferredTaxAssetsTaxDeferredExpenseReservesAndAccrualsLossReserves","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336140Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336170Z","level":"info","event":"  -> balance_sheet.deferred_tax_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336201Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336231Z","level":"info","event":" DeferredTaxAssetsTaxDeferredExpenseReservesAndAccrualsUnearnedPremiumsReserve","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336261Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336292Z","level":"info","event":"  -> balance_sheet.unearned_premium_reserves","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336322Z","level":"info","event":"  -> balance_sheet.deferred_tax_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336353Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336384Z","level":"info","event":" DeferredTaxAssetsValuationAllowance","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336414Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336444Z","level":"info","event":"  -> balance_sheet.deferred_tax_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336475Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336505Z","level":"info","event":" DeferredTaxAssetsValuationAllowanceCurrent","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336536Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336566Z","level":"info","event":"  -> balance_sheet.current_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336597Z","level":"info","event":"  -> balance_sheet.deferred_tax_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336628Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336658Z","level":"info","event":" IntangibleAssetsGrossExcludingGoodwill","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336688Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336718Z","level":"info","event":"  -> balance_sheet.goodwill","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336749Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336779Z","level":"info","event":" IntangibleAssetsNetExcludingGoodwill","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336810Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336840Z","level":"info","event":"  -> balance_sheet.goodwill","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336878Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336908Z","level":"info","event":" OtherAssetsCurrent","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336939Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.336969Z","level":"info","event":"  -> balance_sheet.current_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337007Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337041Z","level":"info","event":" DeferredTaxAssetsTaxDeferredExpenseCompensationAndBenefits","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337071Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337102Z","level":"info","event":"  -> balance_sheet.deferred_tax_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337131Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337161Z","level":"info","event":" ImpairmentOfIntangibleAssetsIndefinitelivedExcludingGoodwill","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337191Z","level":"info","event":"  -> balance_sheet.total_assets","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337220Z","level":"info","event":"  -> balance_sheet.goodwill","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337251Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337281Z","level":"info","event":" DeferredIncomeTaxLiabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337311Z","level":"info","event":"  -> balance_sheet.deferred_tax_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337341Z","level":"info","event":"  -> balance_sheet.total_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337371Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337400Z","level":"info","event":" DeferredTaxLiabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337460Z","level":"info","event":"  -> balance_sheet.deferred_tax_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337498Z","level":"info","event":"  -> balance_sheet.total_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337529Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337560Z","level":"info","event":" DeferredTaxLiabilitiesCurrent","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337590Z","level":"info","event":"  -> balance_sheet.deferred_tax_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337620Z","level":"info","event":"  -> balance_sheet.total_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337650Z","level":"info","event":"  -> balance_sheet.current_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337680Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337711Z","level":"info","event":" DeferredTaxLiabilitiesDeferredExpenseDeferredPolicyAcquisitionCost","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337741Z","level":"info","event":"  -> balance_sheet.deferred_tax_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337771Z","level":"info","event":"  -> balance_sheet.total_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337801Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337831Z","level":"info","event":" DeferredTaxLiabilitiesInvestments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337861Z","level":"info","event":"  -> balance_sheet.deferred_tax_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337891Z","level":"info","event":"  -> balance_sheet.total_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337922Z","level":"info","event":"  -> balance_sheet.investments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337960Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.337991Z","level":"info","event":" DeferredTaxLiabilitiesOther","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338021Z","level":"info","event":"  -> balance_sheet.deferred_tax_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338051Z","level":"info","event":"  -> balance_sheet.total_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338081Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338112Z","level":"info","event":" DeferredTaxLiabilitiesPrepaidExpenses","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338142Z","level":"info","event":"  -> balance_sheet.deferred_tax_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338173Z","level":"info","event":"  -> balance_sheet.total_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338203Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338233Z","level":"info","event":" AccountsPayableAndAccruedLiabilitiesCurrent","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338263Z","level":"info","event":"  -> balance_sheet.total_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338293Z","level":"info","event":"  -> balance_sheet.current_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338323Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338353Z","level":"info","event":" LiabilitiesAndStockholdersEquity","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338383Z","level":"info","event":"  -> balance_sheet.total_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338413Z","level":"info","event":"  -> balance_sheet.stockholders_equity","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338443Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338473Z","level":"info","event":" LiabilitiesCurrent","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338504Z","level":"info","event":"  -> balance_sheet.total_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338534Z","level":"info","event":"  -> balance_sheet.current_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338564Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338594Z","level":"info","event":" LiabilitiesOfDisposalGroupIncludingDiscontinuedOperationCurrent","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338624Z","level":"info","event":"  -> balance_sheet.total_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338654Z","level":"info","event":"  -> balance_sheet.current_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338684Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338714Z","level":"info","event":" ProceedsFromIssuanceOfSeniorLongTermDebt","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338744Z","level":"info","event":"  -> balance_sheet.debt","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338774Z","level":"info","event":"  -> cash_flow.debt_issued","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338805Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338835Z","level":"info","event":" RepaymentsOfLongTermDebt","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338865Z","level":"info","event":"  -> balance_sheet.debt","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338896Z","level":"info","event":"  -> cash_flow.debt_repayment","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338926Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338956Z","level":"info","event":" ProceedsFromIssuanceOfLongTermDebt","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.338995Z","level":"info","event":"  -> balance_sheet.debt","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339025Z","level":"info","event":"  -> cash_flow.debt_issued","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339055Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339086Z","level":"info","event":" LesseeOperatingLeaseLiabilityPaymentsDue","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339117Z","level":"info","event":"  -> balance_sheet.lease_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339147Z","level":"info","event":"  -> cash_flow.lease_payments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339177Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339207Z","level":"info","event":" LesseeOperatingLeaseLiabilityPaymentsDueAfterYearFive","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339237Z","level":"info","event":"  -> balance_sheet.lease_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339268Z","level":"info","event":"  -> cash_flow.lease_payments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339298Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339329Z","level":"info","event":" LesseeOperatingLeaseLiabilityPaymentsDueNextTwelveMonths","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339359Z","level":"info","event":"  -> balance_sheet.lease_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339390Z","level":"info","event":"  -> cash_flow.lease_payments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339420Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339451Z","level":"info","event":" LesseeOperatingLeaseLiabilityPaymentsDueYearFive","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339481Z","level":"info","event":"  -> balance_sheet.lease_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339512Z","level":"info","event":"  -> cash_flow.lease_payments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339543Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339573Z","level":"info","event":" LesseeOperatingLeaseLiabilityPaymentsDueYearFour","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339605Z","level":"info","event":"  -> balance_sheet.lease_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339636Z","level":"info","event":"  -> cash_flow.lease_payments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339666Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339696Z","level":"info","event":" LesseeOperatingLeaseLiabilityPaymentsDueYearThree","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339726Z","level":"info","event":"  -> balance_sheet.lease_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339756Z","level":"info","event":"  -> cash_flow.lease_payments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339787Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339817Z","level":"info","event":" LesseeOperatingLeaseLiabilityPaymentsDueYearTwo","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339848Z","level":"info","event":"  -> balance_sheet.lease_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339878Z","level":"info","event":"  -> cash_flow.lease_payments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339909Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339939Z","level":"info","event":" LesseeOperatingLeaseLiabilityPaymentsRemainderOfFiscalYear","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.339970Z","level":"info","event":"  -> balance_sheet.lease_liabilities","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.340000Z","level":"info","event":"  -> cash_flow.lease_payments","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.340041Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.340072Z","level":"info","event":" StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.340102Z","level":"info","event":"  -> balance_sheet.stockholders_equity","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.340131Z","level":"info","event":"  -> balance_sheet.equity","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.340162Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.340191Z","level":"info","event":" TreasuryStockValueAcquiredCostMethod","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.340221Z","level":"info","event":"  -> balance_sheet.equity","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.340251Z","level":"info","event":"  -> cash_flow.stock_activity","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.354098Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.354455Z","level":"info","event":"========== QUALITY REPORT ==========","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.354570Z","level":"info","event":"Total XBRL tags: 568","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.354678Z","level":"info","event":"Mapped tags: 441","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.354882Z","level":"info","event":"Ignored: 122","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.354931Z","level":"info","event":"Unmapped candidates: 0","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.354965Z","level":"info","event":"Not classified: 2","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.354999Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.355032Z","level":"info","event":"Saved mapping to config/generated_mapping.py","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.356613Z","level":"info","event":"Mapping completed: config/generated_mapping.py","logger":"task.stdout"}
+{"timestamp":"2026-08-11T14:28:14.356647Z","level":"info","event":"Done. Returned value was: config/generated_mapping.py","task_id":"generate_mapping","ti_id":"019ff139-3931-7788-8969-bb75cb5750b3","dag_id":"xbrl_financial_pipeline","run_id":"manual__2026-08-11T14:28:07.071091+00:00","map_index":-1,"try_number":1,"logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":233}
+{"timestamp":"2026-08-11T14:28:14.356738Z","level":"info","event":"::group::Post Execute","task_id":"generate_mapping","ti_id":"019ff139-3931-7788-8969-bb75cb5750b3","dag_id":"xbrl_financial_pipeline","run_id":"manual__2026-08-11T14:28:07.071091+00:00","map_index":-1,"try_number":1,"logger":"task","filename":"task_runner.py","lineno":1577}
+{"timestamp":"2026-08-11T14:28:14.356810Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019ff139-3931-7788-8969-bb75cb5750b3'), task_id='generate_mapping', dag_id='xbrl_financial_pipeline', run_id='manual__2026-08-11T14:28:07.071091+00:00', try_number=1, dag_version_id=UUID('019ff136-2dab-7fd4-b6bc-0498ce3b7166'), map_index=-1, hostname='macbook-pro-irina.local', context_carrier={'traceparent': '00-a10897457f1138b691f3a9cf758fa2f1-291d39408fcaa25c-00'}, queue='default', task=<Task(_PythonDecoratedOperator): generate_mapping>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2026, 8, 11, 14, 28, 11, 623965, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, sentry_integration='')","task_id":"generate_mapping","ti_id":"019ff139-3931-7788-8969-bb75cb5750b3","dag_id":"xbrl_financial_pipeline","run_id":"manual__2026-08-11T14:28:07.071091+00:00","map_index":-1,"try_number":1,"logger":"task","filename":"task_runner.py","lineno":2171}
+{"timestamp":"2026-08-11T14:28:14.369930Z","level":"info","event":"::endgroup::","task_id":"generate_mapping","ti_id":"019ff139-3931-7788-8969-bb75cb5750b3","dag_id":"xbrl_financial_pipeline","run_id":"manual__2026-08-11T14:28:07.071091+00:00","map_index":-1,"try_number":1,"logger":"task","filename":"task_runner.py","lineno":2270}
