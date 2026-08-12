@@ -55,12 +55,20 @@ def xbrl_financial_pipeline():
         run_load(file)
         print("Load completed")
 
+    @task
+    def cleanup():
+        from utils.cleanup_old_files import cleanup_old_files
+
+        cleanup_old_files(max_files=5)
+        print("Cleanup completed")
+
     extract_task = extract()
     mapping_task = generate_mapping(extract_task)
     transform_task = transform(extract_task)
     load_task = load(transform_task)
+    cleanup_task = cleanup()
 
-    extract_task >> mapping_task >> transform_task >> load_task
+    extract_task >> mapping_task >> transform_task >> load_task >> cleanup_task
 
 
 xbrl_financial_pipeline()

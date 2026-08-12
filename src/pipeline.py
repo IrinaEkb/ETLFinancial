@@ -2,6 +2,7 @@ from src.extract.extract_sec import run_extract
 from src.transform.transform_financials import run_transform
 from src.load.load_postgres import run_load
 from utils.generate_mapping import generate_mapping
+from utils.cleanup_old_files import cleanup_old_files
 
 
 def main():
@@ -12,6 +13,8 @@ def main():
     processed_file = run_transform(raw_file)
 
     run_load(processed_file)
+
+    cleanup_old_files(max_files=5)
 
 
 if __name__ == "__main__":

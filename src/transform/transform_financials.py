@@ -77,21 +77,14 @@ def run_transform(input_file=None):
 
                         financial_metrics.append(
 
-                            {
+                            {   "statement": statement,
                                 "metric": metric_name,
-
                                 "source_tag": tag,
-
                                 "value": item.get("val"),
-
                                 "unit": unit_name,
-
                                 "start_date": item.get("start"),
-
                                 "end_date": item.get("end"),
-
                                 "filed_date": item.get("filed"),
-
                                 "form": item.get("form"),
 
                             }
