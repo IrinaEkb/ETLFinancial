@@ -99,3 +99,69 @@ data/analytics/
    ├── balance_sheet_YYYY_MM_DD.csv
    └── cash_flow_YYYY_MM_DD.csv
    ```
+---
+
+## Running the Project
+
+Clone the repository:
+
+```bash
+git clone https://github.com/IrinaEkb/ETLFinancial.git
+cd ETLFinancial
+```
+
+### Run the ETL pipeline
+
+Activate the virtual environment:
+
+```bash
+source venv/bin/activate
+```
+
+Run the pipeline:
+
+```bash
+python -m src.pipeline
+```
+
+### Run tests
+
+```bash
+pytest
+```
+
+### Run Airflow
+
+Activate the Airflow environment:
+
+```bash
+source airflow-env/bin/activate
+export AIRFLOW_HOME="$(pwd)/airflow_config"
+```
+
+Start Airflow:
+
+```bash
+airflow standalone
+```
+
+Open:
+
+```text
+http://localhost:8081
+```
+
+To trigger the DAG manually from another terminal:
+
+```bash
+cd ETLFinancial
+source airflow-env/bin/activate
+export AIRFLOW_HOME="$(pwd)/airflow_config"
+airflow dags trigger xbrl_financial_pipeline
+```
+
+To check DAG runs:
+
+```bash
+airflow dags list-runs xbrl_financial_pipeline
+```
