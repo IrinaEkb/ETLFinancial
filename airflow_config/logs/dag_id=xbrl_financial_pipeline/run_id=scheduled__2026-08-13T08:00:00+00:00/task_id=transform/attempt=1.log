@@ -1,0 +1,46 @@
+{"timestamp":"2026-08-31T18:21:21.077235Z","level":"info","event":"2026-08-31T18:21:21.077016Z [info     ] ::group::Pre Execute           [task] loc=task_runner.py:2303","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.248911Z","level":"info","event":"DAG bundles loaded: dags-folder","run_id":"scheduled__2026-08-13T08:00:00+00:00","dag_id":"xbrl_financial_pipeline","ti_id":"01a0590d-cd22-7b8e-ba74-de41e29324e6","try_number":1,"map_index":-1,"task_id":"transform","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":271}
+{"timestamp":"2026-08-31T18:21:21.249365Z","level":"info","event":"Filling up the DagBag from /Users/irinafendley/Projects/ETLFinancial/airflow_config/dags/auto_pipeline.py","run_id":"scheduled__2026-08-13T08:00:00+00:00","dag_id":"xbrl_financial_pipeline","ti_id":"01a0590d-cd22-7b8e-ba74-de41e29324e6","try_number":1,"map_index":-1,"task_id":"transform","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":460}
+{"timestamp":"2026-08-31T18:21:21.266097Z","level":"info","event":"Worker startup parse complete","bundle_name":"dags-folder","bundle_version":null,"dag_file":"auto_pipeline.py","dag_id":"xbrl_financial_pipeline","bundle_prepare_ms":0,"dag_file_parse_ms":16,"run_id":"scheduled__2026-08-13T08:00:00+00:00","ti_id":"01a0590d-cd22-7b8e-ba74-de41e29324e6","try_number":1,"map_index":-1,"task_id":"transform","logger":"task","filename":"task_runner.py","lineno":1062}
+{"timestamp":"2026-08-31T18:21:21.286719Z","level":"info","event":"::endgroup::","run_id":"scheduled__2026-08-13T08:00:00+00:00","dag_id":"xbrl_financial_pipeline","ti_id":"01a0590d-cd22-7b8e-ba74-de41e29324e6","try_number":1,"map_index":-1,"task_id":"transform","logger":"task","filename":"task_runner.py","lineno":2107}
+{"timestamp":"2026-08-31T18:21:21.512541Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.512897Z","level":"info","event":"========== RULE DUPLICATES ==========","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.512996Z","level":"info","event":"Tags defined in multiple rules: 0","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.528670Z","level":"info","event":"Using raw file: data/raw/humana_2026_08_31.json","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.713844Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.713961Z","level":"info","event":"Saved 30739 rows to data/processed/humana_financial_metrics_2026_08_31.csv","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.714012Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.714092Z","level":"info","event":"========== DATA QUALITY CHECKS ==========","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.714194Z","level":"info","event":"Total rows: 30739","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.720082Z","level":"info","event":"Unique metrics: 85","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.744863Z","level":"info","event":"source_tag","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.744995Z","level":"info","event":"AccountsPayableAndAccruedLiabilitiesCurrent                               2","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.745047Z","level":"info","event":"AmortizationOfIntangibleAssets                                            2","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.745218Z","level":"info","event":"AssetsCurrent                                                             2","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.745287Z","level":"info","event":"AssetsOfDisposalGroupIncludingDiscontinuedOperationCurrent                2","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.745331Z","level":"info","event":"AvailableForSaleDebtSecuritiesAccumulatedGrossUnrealizedGainBeforeTax     2","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.745373Z","level":"info","event":"                                                                         ..","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.745420Z","level":"info","event":"ProceedsFromSaleOfAvailableForSaleSecurities                              2","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.745508Z","level":"info","event":"ProceedsFromSaleOfAvailableForSaleSecuritiesDebt                          2","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.745555Z","level":"info","event":"RepaymentsOfLongTermDebt                                                  2","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.745596Z","level":"info","event":"StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest    2","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.745635Z","level":"info","event":"TreasuryStockValueAcquiredCostMethod                                      2","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.745708Z","level":"info","event":"Name: metric, Length: 88, dtype: int64","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.745770Z","level":"info","event":"Duplicate rows: 0","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.745814Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.745855Z","level":"info","event":"Missing values by column:","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.753989Z","level":"info","event":"statement         0","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.754178Z","level":"info","event":"metric            0","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.754270Z","level":"info","event":"source_tag        0","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.754480Z","level":"info","event":"value             0","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.754534Z","level":"info","event":"unit              0","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.754573Z","level":"info","event":"start_date    11504","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.754614Z","level":"info","event":"end_date          0","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.754651Z","level":"info","event":"filed_date        0","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.754690Z","level":"info","event":"form              0","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.754730Z","level":"info","event":"dtype: int64","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.759494Z","level":"info","event":"Transform completed: data/processed/humana_financial_metrics_2026_08_31.csv","logger":"task.stdout"}
+{"timestamp":"2026-08-31T18:21:21.759506Z","level":"info","event":"Done. Returned value was: data/processed/humana_financial_metrics_2026_08_31.csv","run_id":"scheduled__2026-08-13T08:00:00+00:00","dag_id":"xbrl_financial_pipeline","ti_id":"01a0590d-cd22-7b8e-ba74-de41e29324e6","try_number":1,"map_index":-1,"task_id":"transform","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":233}
+{"timestamp":"2026-08-31T18:21:21.759607Z","level":"info","event":"::group::Post Execute","run_id":"scheduled__2026-08-13T08:00:00+00:00","dag_id":"xbrl_financial_pipeline","ti_id":"01a0590d-cd22-7b8e-ba74-de41e29324e6","try_number":1,"map_index":-1,"task_id":"transform","logger":"task","filename":"task_runner.py","lineno":1577}
+{"timestamp":"2026-08-31T18:21:21.759700Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01a0590d-cd22-7b8e-ba74-de41e29324e6'), task_id='transform', dag_id='xbrl_financial_pipeline', run_id='scheduled__2026-08-13T08:00:00+00:00', try_number=1, dag_version_id=UUID('019ff14f-3c85-735c-96c3-eff9969d0e15'), map_index=-1, hostname='macbook-pro-irina.local', context_carrier={'traceparent': '00-55ecc8783817e071c50105733e9a3b81-273c3f3610981509-00'}, queue='default', task=<Task(_PythonDecoratedOperator): transform>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2026, 8, 31, 18, 21, 20, 318631, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, sentry_integration='')","run_id":"scheduled__2026-08-13T08:00:00+00:00","dag_id":"xbrl_financial_pipeline","ti_id":"01a0590d-cd22-7b8e-ba74-de41e29324e6","try_number":1,"map_index":-1,"task_id":"transform","logger":"task","filename":"task_runner.py","lineno":2171}
+{"timestamp":"2026-08-31T18:21:21.779085Z","level":"info","event":"::endgroup::","run_id":"scheduled__2026-08-13T08:00:00+00:00","dag_id":"xbrl_financial_pipeline","ti_id":"01a0590d-cd22-7b8e-ba74-de41e29324e6","try_number":1,"map_index":-1,"task_id":"transform","logger":"task","filename":"task_runner.py","lineno":2270}

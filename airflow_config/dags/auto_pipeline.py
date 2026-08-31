@@ -56,6 +56,16 @@ def xbrl_financial_pipeline():
         print("Load completed")
 
     @task
+    def generate_financial_statements():
+        from utils.generate_financial_statements import (
+            generate_financial_statements as run_generate_financial_statements
+        )
+
+        files = run_generate_financial_statements()
+        print(f"Financial statements generated: {files}")
+        return [str(file) for file in files]
+
+    @task
     def cleanup():
         from utils.cleanup_old_files import cleanup_old_files
 
@@ -63,12 +73,22 @@ def xbrl_financial_pipeline():
         print("Cleanup completed")
 
     extract_task = extract()
+
     mapping_task = generate_mapping(extract_task)
+
     transform_task = transform(extract_task)
+
     load_task = load(transform_task)
+
+    statements_task = generate_financial_statements()
+
     cleanup_task = cleanup()
 
-    extract_task >> mapping_task >> transform_task >> load_task >> cleanup_task
+    extract_task >> mapping_task
+    mapping_task >> transform_task
+    transform_task >> load_task
+    load_task >> statements_task
+    statements_task >> cleanup_task
 
 
 xbrl_financial_pipeline()
